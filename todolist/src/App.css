@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+  background-color: #e3f2fd; /* Light blue background */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home:hover {
+  transform: scale(1.02); /* Slight hover effect on the container */
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Stylish uppercase title */
+}
+
+/* Input field */
+.create_form input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 18px;
+  background-color: #f7f9fc;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.05); /* Soft inner shadow */
+}
+
+.create_form input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Blue glow on focus */
+}
+
+/* Button Styling */
+.create_form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.create_form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Hover scale effect */
+  box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.2); /* Soft blue shadow */
+}
+
+/* Task container */
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 60px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05); /* Soft task shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Lift effect */
+}
+
+/* Checkbox styling */
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox .icon {
+  margin-right: 12px;
+  font-size: 22px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.checkbox .icon.done {
+  color: #28a745; /* Green color for completed task */
+}
+
+.checkbox:hover .icon {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Task text */
+.checkbox p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.checkbox p.done {
+  color: #bbb; /* Greyed out for completed task */
+  text-decoration: line-through;
+}
+
+/* Trash icon styling */
+.task div .icon {
+  font-size: 22px;
+  color: #ff4d59;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.task div .icon:hover {
+  color: #74ff17;
+  transform: scale(1.2);
+}
